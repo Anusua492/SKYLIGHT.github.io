@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skylight : Your Weather Wonderland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="SKYLIGHT.png"><img src="SKYLIGHT.png" id="photo">Skylight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <button id="reloadBtn" >HOME</button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">About this App</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" id="drop">Skylight is a user-friendly weather website that provides<br>
+                                 real-time weather updates with precision and simplicity.<br> 
+                                 Whether you're planning a weekend getaway or just checking the daily forecast,<br>
+                                  Skylight offers accurate weather information at your fingertips.<br> 
+                                  The app's sleek design and intuitive interface make it easy for<br> 
+                                  users to access detailed weather data, including temperature, humidity,<br>
+                                   wind speed, and more. Skylight also offers location-based weather alerts<br> and customizable notifications to keep you prepared for any weather condition.<br> With Skylight, staying informed about the weather has never been more convenient, <br>making it your go-to source for all things meteorological.
+
+
+
+
+
+                            </a></li>
+
+                        </ul>
+
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit"><b>Search</b></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <div class="animation-container">
+      <h1 class="animated-text"><br>Weather for <span id="cityname"></span></h1>
+      </div>
+        <main>
+            <br><br><br><br>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header1 py-3">
+                            <h4 class="my-0 fw-normal">Temperatures</h4>
+                        </div>
+                        <div class="card-body1">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
+                                    class="text-body-secondary fw-light">°c</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><b>Temperature is <span id="temp"></span>°c</b></li>
+                                <li><b>Min Temperature is <span id="min_temp"></span>°c</b></li>
+                                <li><b>Max Temperature is <span id="max_temp"></span>°c</b></li>
+                                
+                            </ul>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header2 py-3">
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
+                        </div>
+                        <div class="card-body2">
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small
+                                    class="text-body-secondary fw-light"> %</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><b>PCT is <span id="cloud_pct"></span></b></li>
+                                <li><b>Feels Like  <span id="feels_like"></span> %</b></li>
+                                <li><b>Humidity is <span id="humidity"></span> %</b></li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header3 py-3">
+                            <h4 class="wind">Wind Info</h4>
+                        </div>
+                        <div class="card-body3">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                    class="text-body-secondary fw-light"> km/hr</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><b>Wind speed is <span id="wind_speed"></span> km/hr</li>
+                                <li>Wind dgree is <span id="wind_degrees"></span> degrees</li>
+                                <li>Sunrise is <span id="sunrise"></span></li>
+                                <li>Sunset is <span id="sunset"></span></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="scr.js"></script>
+    
+</body>
+
+</html>

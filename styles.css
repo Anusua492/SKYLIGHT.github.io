@@ -1,0 +1,149 @@
+/* styles.css */
+body {
+    background-image: url('photo.jpg');
+    background-repeat: no-repeat;
+    background-size: 3000px 1250px;
+
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-header {
+    background-color: white;
+    border-bottom: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  
+  .navbar {
+    background-color: antiquewhite;
+  }
+
+  .container-fluid{
+    background-color: antiquewhite;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  #about:hover {
+    background-color: #0056b3;
+  }
+  
+  .dropdown-menu {
+    background-color: #007bff;
+  }
+  
+
+
+   #about{
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+ 
+
+ 
+
+  
+  #reloadBtn {
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #reloadBtn:hover {
+    background-color: #0056b3;
+  }
+
+  #photo{
+    width: 66px;
+    padding: 0 8px;
+  }
+
+  #drop{
+    background-color: #555;
+    color: #fff;
+  }
+
+  .card-body1{
+    background-image: url('temp.jpg');
+    background-size: 450px 200px;
+    background-repeat: no-repeat;
+    padding-bottom: 31px;
+  }
+
+  .card-body2{
+    background-image: url('humidity.jpeg');
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+    padding-bottom: 31px;
+  }
+
+  .card-body3{
+    background-image: url('wind1.jpg');
+    background-size: 450px 200px;
+    background-repeat: no-repeat;
+  }
+
+  .card-header1{
+    background-color: coral;
+  }
+
+  .card-header2{
+    background-color:#AFE1AF;
+  }
+
+  .card-header3{
+    background-color: skyblue;
+  }
+  
+
+.container .animation-container {
+    position: relative;
+    height: 100px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.container .animation-container .animated-text {
+    position: absolute;
+    top: -50px; /* Start from the top */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    animation: slideFromTop 2s ease-in-out forwards; /* Adjust animation duration and timing function as needed */
+}
+
+@keyframes slideFromTop {
+    0% {
+        top: -50px; /* Start off-screen */
+    }
+    100% {
+        top: 0; /* Stop at this position */
+    }
+}
